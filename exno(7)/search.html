@@ -1,0 +1,89 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ *
+ * @author NIKITHA
+ */
+public class sample extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        String s=request.getParameter("a");
+       
+        String info="";
+        if(s.equals("vijay")||s.equals("ghilli"))
+        {
+            info="Ghilli (transl.?Gutsy) is a 2004 Indian Tamil-language sports action film directed by Dharani and produced by A. M. Rathnam. It is a remake of the Telugu-language film Okkadu (2003). The film stars Vijay, Trisha and Prakash Raj with Ashish Vidyarthi, Dhamu, Mayilsamy and Janaki Sabesh playing supporting roles.\n" +
+"\n" +
+"The soundtrack album and score were composed by Vidyasagar. Cinematography was handled by Gopinath and editing was done by V. T. Vijayan and B. Lenin. Dialogues for the film were written by Bharathan. The film was released on 17 April 2004 to generally positive reviews and became a blockbuster and a cult classic.[3] The film ran for more than 200 days at the box office, breaking the box office records of the 1999 film Padayappa in the process.[4] It emerged as the highest-grossing Tamil film of 2004 and became the first Tamil film to gross ?50 crore.[5] Ghilli is considered to be one of the best films in Vijay's career.[6]\n" +
+"Plot\n" +
+"\n" +
+"Velu is a state-level Kabaddi player living in Chennai. His father, Assistant Commissioner of Police Sivasubramaniam, constantly chides him for neglecting his studies and favouring Kabaddi. In contrast, his mother dotes on him, and his younger sister Bhuvana, a sharp and inquisitive schoolgirl, constantly gets Velu into trouble with their father, but nevertheless adores him. One day, Velu gets sent to his relatives' wedding in Trichy, but skips the wedding to go and play in a kabaddi match in Madurai, unknown to his parents.\n" +
+"\n" +
+"In Madurai, Muthupandi, a ruthless gang leader, lusts for a girl named Dhanalakshmi and would do anything to marry her. Muthupandi kills Dhanalakshmi's oldest brother as he rejects his offer to marry her. Dhanalakshmi's second oldest brother is also killed by Muthupandi when attempting to avenge his brother's murder. Dhanalakshmi's father is a meek man who gets terrified by Muthupandi's acts and asks Dhanalakshmi to leave Madurai and lead a peaceful life with her uncle in the United States, giving her money and her university certificates. Muthupandi catches her when she runs but Velu, who happens to pass by, clashes with Muthupandi and rescues Dhanalakshmi and then takes her to Chennai. Muthupandi swears revenge.\n" +
+"\n" +
+"Velu takes Dhanalakshmi to his house and hides her in his room, unknown to his family. With the help of his friends, he arranges a passport, visa, and plane tickets for Dhanalakshmi so that she can go to the United States. Meanwhile, Muthupandi and his father, who is the Home Minister, ask Sivasubramaniam to search for Dhanalakshmi and the apparent kidnapper. When Sivasubramaniam discovers that it is his own son who did the \"crime\", Velu and Dhanalakshmi run away and hide in the lighthouse.\n" +
+"\n" +
+"Dhanalakshmi has by now fallen in love with Velu, and has been accepted by his mother and sister. So she is reluctant to go to the US. Velu however, is adamant on sending her to the US, and he, along with his friends, get her to the Chennai International Airport in time for her flight before their kabaddi match against Punjab in the final match of the National League.\n" +
+"\n" +
+"Sivasubramaniam, enraged that his son is a wanted criminal and yet plays in a kabaddi match, goes to the stadium to arrest Velu. By now, Velu too has fallen in love with Dhanalakshmi and begins to miss her, only to spot her in the stadium during the match. Velu's lack of focus in the game is replaced by his best performance on seeing Dhanalakshmi, winning his team the championship. Soon after, Velu is arrested by his father, but is then stopped by Muthupandi, who wants to fight Velu, having been incited by Dhanalakshmi to do so to prove his worth. Velu defeats Muthupandi and embraces Dhanalakshmi, but when Muthupandi regains consciousness and tries to kill Velu, a floodlight broken during the fight accidentally hits Muthupandi, who gets electrocuted to death. ";
+        }
+          if(s.equals("dhanush")||s.equals("vip"))
+          {
+              info="Velaiilla Pattadhari (transl.?The Unemployed Graduate), popularly referred to as VIP, is a 2014 Indian Tamil-language comedy drama film written and directed by Velraj, in his directorial debut. The film stars Dhanush and Amala Paul, while Vivek, Saranya Ponvannan, Samuthirakani and Surbhi play supporting roles.\n" +
+"\n" +
+"Dhanush, besides acting, producing and distributing the venture in association with Escape Artists Motion Pictures, also worked as the lyricist and album producer on the film's original soundtrack. The film's album and score were composed by Anirudh Ravichander.The stunt department of this movie handled by Hari Dinesh. The film focuses on Raghuvaran, a graduate who is unemployed for four years, and how he gets a job, whilst successfully overcoming various obstacles before and after finding employment.\n" +
+"\n" +
+"Principal photography commenced in August 2013 and was completed by May 2014, with the film being shot primarily in Chennai. The film was released on 18 July 2014, and received positive critical reception. It was remade in Kannada as Brihaspathi (2018) and in Bhojpuri as Mehandi Lage Ke Rakhna 3 (2020). A sequel to the film directed by Soundarya Rajinikanth was released on 11 August 2017.\n" +
+"Plot\n" +
+"\n" +
+"Raghuvaran is a graduate in Civil Engineering, but has been unemployed for four years. He is adamant about working in a job related to his field only and is unwilling to accept any other profession. He often comes into conflict with his father, who considers him irresponsible. His younger brother, Karthik, works in an IT company, earning well and, evidently, his father's approval. Raghuvaran's mother, Bhuvana, however, supports him. Raghuvaran falls for his neighbour's daughter, Shalini who hates him initially, but warms up to him after hearing about the difficulties he is facing and eventually reciprocates his love.\n" +
+"\n" +
+"One day, while Raghuvaran's father and Karthik are absent, he is asked to look after his mother, who has a heart condition. However, he goes out on a date with Shalini. He gets continuous phone calls from his mother, which he ignores despite Shalini's insistence to pick them up. However, on returning home, he finds out that his mother had died of a heart attack. Raghuvaran feels guilty about not being there when his mother needed him and develops depression. Meanwhile, Bhuvana's lungs are transplanted into Anitha, a chain smoker who developed lung cancer. Anitha's father Ramkumar is the chairman of a civil engineering company in Chennai and offers Raghuvaran a job as a token of his gratitude for saving his daughter's life. Raghuvaran accepts the job while also requesting Anitha not to smoke, which she agrees. Six months later, Raghuvaran is offered an assignment on a government project to construct high-rise flats to re-house people living in a nearby slum. Azhagusundaram and Manickam are appointed as his assistants. He successfully wins the contract from the government and begins work on it immediately.\n" +
+"\n" +
+"Arun Subramaniam, a business novice who took over his father's company's Chennai branch, bids for the same contract, even by using illegal methods. Furious that he did not get the land, he tries to thwart Raghuvaran's progress in a number of ways. Raghuvaran overcomes each of these obstacles and continues his work, but Arun eventually hires rowdies to beat up Raghuvaran's workers at the construction site. The workers get injured and end up in hospital, which prompts Raghuvaran to go to Arun's office to put an end to this issue. He makes Arun confess that he sent the rowdies, which is recorded by a micro spy camera, and demands an apology from Arun, blackmailing him that otherwise the video would be made public. Fearing that the video could tarnish his reputation, Arun's father, Venkat, sends his son to the hospital to apologise. Raghuvaran accepts the apology and the project is completed within ten months.\n" +
+"\n" +
+"On the day of the flats' inauguration, Arun and a gang of rowdies ambush Raghuvaran en route. He outwits them but spares Arun, much to Arun's surprise. Raghuvaran says he has no intention to compete with or beat him and wishes to be his friend. Raghuvaran takes Arun to the site on his moped, where the state public works minister and Anitha inaugurate the flats. ";
+          }
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet sample</title>");            
+            out.println("</head>");
+            out.println("<body background=\"https://img.freepik.com/premium-photo/watercolor-background-grey-watercolour-painting-textured-design-white-paper-background_7190-3250.jpg\">");
+            out.println("<h1>"+s+"</h1>");
+
+            out.print (" <p>"+info+"</p>");
+          out.print (info);
+          out.println(s);
+          out.print ("      </font>\n");
+            out.println("</body>");
+            out.println("<style>");
+            out.println("</html>");
+        }
+    }
+
+    
