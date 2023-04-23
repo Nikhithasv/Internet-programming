@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $.ajax({
+          url: "books.xml",
+          dataType: "xml",
+          success: function(xml) {
+            var books = $(xml).find("book");
+            var select = $("<select></select>");
+            select.append("<option>Select a book</option>");
+            $(books).each(function() {
+              var title = $(this).find("title").text();
+              var option = $("<option></option>").text(title);
+              select.append(option);
+            });
+            select.change(function() {
+              var title = $(this).val();
+              $(books).each(function() {
+                if ($(this).find("title").text() == title) {
+                    var title = $(this).find("title").text();
+                  var author = $(this).find("author").text();
+                  var year = $(this).find("year").text();
+                  
+                  var details = $("<p></p>").text("title:"+title+" Author: " + author + "Year: " + year );
+                  $("#details").html(details);
+                }
+              });
+            });
+            $("body").append(select);
+            $("body").append("<div id='details'></div>");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
