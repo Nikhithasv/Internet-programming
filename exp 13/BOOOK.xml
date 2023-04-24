@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<books>
+  <book>
+    <title>The silent patient</title>
+    <author>J.D. Salinger</author>
+    <year>1999</year>
+    <price>1255</price>
+    <available>yes</available>
+  </book>
+  <book>
+    <title>To Kill a Mockingbird</title>
+    <author>Harper Lee</author>
+    <year>1960</year>
+    <price>650</price>
+    <available>no</available>
+  </book>
+  <book>
+    <title>Think like a monk</title>
+    <author>jay shetty</author>
+    <year>2021</year>
+    <price>482</price>
+    <available>yes</available>
+  </book>
+  <book>
+    <title>Touch of eternirty</title>
+    <author>jay shetty</author>
+    <year>2020</year>
+    <price>482</price>
+    <available>yes</available>
+  </book>
+</books>
+
+
